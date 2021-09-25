@@ -14,10 +14,10 @@ if st.button('Instagram'):
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
-st.write("en -Englidh , de -Greman , zh-cn - chinese , Hi - hindi , ro -Romanian")
-slangs = ('de','en', 'ro','hi', 'zh-cn')
+st.write("en -Englidh , de -Greman , zh-cn - chinese , Hi - hindi , ro -Romanian, ja -Japanese")
+slangs = ('de','en', 'ro','hi', 'zh-cn','ja')
 
-tlangs = ('ro','zh-cn','de','hi','en')
+tlangs = ('ro','zh-cn','ja','de','hi','en')
 
 sourceLang = st.selectbox('Select source language', slangs)
 
